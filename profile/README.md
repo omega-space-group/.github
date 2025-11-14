@@ -1,4 +1,4 @@
-# Ω-space Group
+# Ω-Space Group
 
 **ORION Lab | National Technical University of Athens**
 
@@ -14,7 +14,7 @@
 
 ## 🛰️ About Us
 
-The **Ω-space (Omega-space) Group** is part of the **ORION Lab** at the **National Technical University of Athens (NTUA)**. We focus on:
+The **Ω-Space (Omega-Space) Group** is part of the **ORION Lab** at the **National Technical University of Athens (NTUA)**. We focus on:
 
 - 🤖 **AI Algorithms for Space Systems**
 - 🛰️ **CubeSat Technology Development**
@@ -158,7 +158,7 @@ We welcome collaboration from:
 
 ## 📧 Contact
 
-**Ω-space Group**  
+**Ω-Space Group**  
 ORION Lab  
 National Technical University of Athens
 
