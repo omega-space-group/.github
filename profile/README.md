@@ -179,5 +179,8 @@ All our projects are open-source under **GPL-3.0** license, promoting transparen
 
 **Building the future of open-source space technology** 🚀
 
-[![GitHub followers](https://img.shields.io/github/followers/omega-space-group?style=social)](https://github.com/omega-space-group)
-[![GitHub stars](https://img.shields.io/github/stars/omega-space-group?style=social)](https://github.com/omega-space-group)
+[![Repositories](https://img.shields.io/badge/Repositories-2-blue)](https://github.com/omega-space-group)
+[![Projects](https://img.shields.io/badge/Active%20Projects-1-green)](https://github.com/omega-space-group/orion-cubesat-testbed)
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue)](https://www.gnu.org/licenses/gpl-3.0)
+
+</div>
