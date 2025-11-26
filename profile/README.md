@@ -27,40 +27,19 @@ Our mission is to advance space technology through open-source innovation, hands
 
 ## 🚀 Main Project: ORION CubeSat Flatsat Testbed
 
-### [**orion-cubesat-testbed**](https://github.com/omega-space-group/orion-cubesat-testbed)
-
-A comprehensive CubeSat flatsat testbed for deploying and testing AI algorithms, end-to-end processing pipelines, and avionics software/hardware.
+A comprehensive CubeSat flatsat testbed for deploying and testing AI algorithms, end-to-end processing pipelines and avionics software/hardware.
 
 **Key Features:**
-- ✨ **Space ROS 2** integration for modern middleware
-- 🤖 **Containerized AI** payload processing (NVIDIA Jetson + FPGA)
-- 🔗 **Hybrid communication** (Space ROS DDS + CubeSat Space Protocol)
+- 🏗️ **Hybrid Architecture** combining proven satellite protocols with modern AI frameworks
+- 🛰️ **cFS-Inspired C&DH** for flight-proven satellite bus operations
+- 🤖 **SpaceROS AI Payload** with containerized processing (NVIDIA Jetson + FPGA)
+- 🔗 **Dual-Layer Communication** (CSP/CAN for control + DDS/GigE for high-bandwidth)
 - 🎓 **Educational platform** for student research projects
 - 🌍 **Fully open-source** (GPL-3.0)
 
-**Architecture:**
-```
-┌─────────────────┐
-│ Ground Station  │
-└────────┬────────┘
-         │ RF
-    ┌────┴────┐
-    │  Comms  │
-    └────┬────┘
-         │ GigE + CAN
-    ┌────┴─────────────┐
-    │   C&DH           │
-    │  (RPi4/STM32)    │
-    │   + Space ROS    │
-    └─┬──────────────┬─┘
-      │ CAN          │ GigE + CAN
-  ┌───┴─────┐    ┌───┴─────────┐
-  │   EPS   │    │  Payload    │
-  │ (STM32) │    │(Jetson/FPGA)│
-  └─────────┘    └─────────────┘
-```
 
-[**→ Explore the Testbed**](https://github.com/omega-space-group/orion-cubesat-testbed)
+
+[**Explore the Testbed**](https://github.com/omega-space-group/orion-cubesat-testbed)
 
 ---
 
@@ -71,11 +50,9 @@ We actively support Master's thesis projects related to space systems:
 ### [**student-projects**](https://github.com/omega-space-group/student-projects)
 
 Current research areas:
-- **Command & Data Handling Software** (Space ROS based)
-- **AI Payload Processing Framework** (Containerized deployment)
-- **Communication Infrastructure** (Hybrid ROS+CSP architecture)
-
-[**→ View Student Projects**](https://github.com/omega-space-group/student-projects)
+- **Command & Data Handling Software** (cFS-inspired architecture with CSP/CAN)
+- **AI Payload Processing Framework** (SpaceROS with native ROS2 nodes and optional containerization)
+- **Communication Infrastructure** (Hybrid CSP/CAN + DDS/GigE architecture)
 
 ---
 
@@ -84,14 +61,8 @@ Current research areas:
 ### Core Projects
 | Repository | Description | Status |
 |------------|-------------|--------|
-| [**orion-cubesat-testbed**](https://github.com/omega-space-group/orion-cubesat-testbed) | Main CubeSat flatsat testbed | 🔄 Active Development |
+| [**orion-cubesat-testbed**](https://github.com/omega-space-group/orion-cubesat-testbed) | Hybrid CubeSat flatsat testbed | 🔄 Active Development |
 | [**student-projects**](https://github.com/omega-space-group/student-projects) | Master's thesis projects | 🎓 Active Research |
-
-### Coming Soon
-- Ground segment tools
-- Space ROS packages
-- AI model deployments
-- Hardware documentation
 
 ---
 
@@ -109,33 +80,56 @@ We welcome collaboration from:
 
 ## 🔬 Research Focus Areas
 
+### Hybrid Space Systems Architecture
+- Integration of cFS patterns with modern frameworks
+- Hybrid communication protocols (CSP/CAN + DDS)
+- Flight-proven protocols for satellite bus
+- Modern frameworks for AI payload processing
+
 ### AI & Machine Learning
 - On-board AI inference optimization
 - Edge computing for space applications
-- TensorRT model deployment
+- TensorRT model deployment on Jetson
 - Resource-constrained ML algorithms
+- AI application lifecycle management
 
 ### Space Systems Engineering
 - CubeSat subsystem integration
-- Avionics software architecture
-- Power management systems
-- Communication protocols
+- cFS-inspired avionics software architecture
+- Power management systems (EPS)
+- CubeSat Space Protocol (CSP) implementation
+- Real-time communication systems
 
-### Modern Middleware
-- Space ROS 2 for CubeSats
-- Hybrid communication architectures
-- Real-time operating systems
-- Containerization for space
+### Modern Middleware & Protocols
+- SpaceROS (ROS2) for AI payload processing
+- CubeSat Space Protocol (libcsp)
+- DDS for high-bandwidth data transfer
+- Real-time operating systems (FreeRTOS)
+- Containerization for space applications
 
 ---
 
 ## 📖 Publications & Resources
 
-### Related Technologies
-- [Space ROS](https://space.ros.org/) - ROS 2 for space applications
+### Technologies We Use
+
+**Satellite Bus:**
+- [NASA cFS](https://cfs.gsfc.nasa.gov/) - Core Flight System (architectural inspiration)
 - [CubeSat Space Protocol (CSP)](https://github.com/libcsp/libcsp) - Communication protocol
-- [micro-ROS](https://micro.ros.org/) - ROS 2 for microcontrollers
 - [FreeRTOS](https://www.freertos.org/) - Real-time operating system
+
+**AI Payload:**
+- [Space ROS](https://space.ros.org/) - ROS 2 for space applications
+- [TensorRT](https://developer.nvidia.com/tensorrt) - NVIDIA inference optimizer
+- [Docker](https://www.docker.com/) - Container platform (optional)
+
+**Communication:**
+- [Fast-DDS](https://fast-dds.docs.eprosima.com/) - DDS implementation
+- [CycloneDDS](https://cyclonedds.io/) - Alternative DDS implementation
+
+### Research Inspiration
+- **JAXA RACS**: H. Kato et al., "ROS and cFS System (RACS): Easing Space Robotic Development," IEEE Aerospace 2021
+- **JAXA RACS Extended DDS**: https://github.com/jaxa/racs2_extended-dds
 
 ### Publications
 *Publications and papers from our research will be listed here*
@@ -144,7 +138,7 @@ We welcome collaboration from:
 
 ## 🏢 About ORION Lab
 
-**ORION Lab** focuses on cutting-edge research in AI, machine learning, and space technology. Part of the **National Observatory of Athens** and the **National Technical University of Athens**, we combine academic excellence with practical innovation.
+**ORION Lab** focuses on cutting-edge research in AI, machine learning and space technology. Part of the **National Observatory of Athens** and the **National Technical University of Athens**, we combine academic excellence with practical innovation.
 
 **Key Areas:**
 - Artificial Intelligence & Machine Learning
@@ -162,6 +156,11 @@ We welcome collaboration from:
 ORION Lab  
 National Technical University of Athens
 
+- Simon Vellas: svellas@mail.ntua.gr
+- Christos Chronis: chronis@hua.gr
+- Alexis Apostolakis: alexis.apostolakis@gmail.com
+- Giorgos Athanasiou: georgios.athanasiou.ntua@gmail.com
+
 **Website:** [https://orionlab.space.noa.gr/](https://orionlab.space.noa.gr/)  
 **Location:** Athens, Greece
 
@@ -171,7 +170,7 @@ For inquiries about collaboration, student projects, or research opportunities, 
 
 ## 📜 License
 
-All our projects are open-source under **GPL-3.0** license, promoting transparency, collaboration, and knowledge sharing in the space community.
+All our projects are open-source under **GPL-3.0** license, promoting transparency, collaboration and knowledge sharing in the space community.
 
 ---
 
