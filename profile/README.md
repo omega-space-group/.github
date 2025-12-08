@@ -33,7 +33,7 @@ A comprehensive CubeSat flatsat testbed for deploying and testing AI algorithms,
 - 🏗️ **Hybrid Architecture** combining proven satellite protocols with modern AI frameworks
 - 🛰️ **cFS-Inspired C&DH** for flight-proven satellite bus operations
 - 🤖 **SpaceROS AI Payload** with containerized processing (NVIDIA Jetson + FPGA)
-- 🔗 **Dual-Layer Communication** (CSP/CAN for control + DDS/GigE for high-bandwidth)
+- 🔗 **Dual-Layer Communication** (CSP/CAN for control + GigE for high-bandwidth)
 - 🎓 **Educational platform** for student research projects
 - 🌍 **Fully open-source** (GPL-3.0)
 
@@ -51,8 +51,8 @@ We actively support Master's thesis projects related to space systems:
 
 Current research areas:
 - **Command & Data Handling Software** (cFS-inspired architecture with CSP/CAN)
-- **AI Payload Processing Framework** (SpaceROS with native ROS2 nodes and optional containerization)
-- **Communication Infrastructure** (Hybrid CSP/CAN + DDS/GigE architecture)
+- **AI Payload Processing Framework** (SpaceROS with native ROS2 nodes, Zenoh RMW and optional containerization)
+- **Communication Infrastructure** (Hybrid CSP/CAN + Zenoh over GigE architecture)
 
 ---
 
@@ -82,7 +82,7 @@ We welcome collaboration from:
 
 ### Hybrid Space Systems Architecture
 - Integration of cFS patterns with modern frameworks
-- Hybrid communication protocols (CSP/CAN + DDS)
+- Hybrid communication protocols (CSP/CAN + Zenoh)
 - Flight-proven protocols for satellite bus
 - Modern frameworks for AI payload processing
 
@@ -103,7 +103,8 @@ We welcome collaboration from:
 ### Modern Middleware & Protocols
 - SpaceROS (ROS2) for AI payload processing
 - CubeSat Space Protocol (libcsp)
-- DDS for high-bandwidth data transfer
+- Zenoh as ROS2 Middleware
+- Zenoh for high-bandwidth data transfer
 - Real-time operating systems (FreeRTOS)
 - Containerization for space applications
 
@@ -124,12 +125,10 @@ We welcome collaboration from:
 - [Docker](https://www.docker.com/) - Container platform (optional)
 
 **Communication:**
-- [Fast-DDS](https://fast-dds.docs.eprosima.com/) - DDS implementation
-- [CycloneDDS](https://cyclonedds.io/) - Alternative DDS implementation
+- [Zenoh](https://zenoh.io/) - Zenoh Network Protocol
 
 ### Research Inspiration
 - **JAXA RACS**: H. Kato et al., "ROS and cFS System (RACS): Easing Space Robotic Development," IEEE Aerospace 2021
-- **JAXA RACS Extended DDS**: https://github.com/jaxa/racs2_extended-dds
 
 ### Publications
 *Publications and papers from our research will be listed here*
