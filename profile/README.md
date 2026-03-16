@@ -32,7 +32,7 @@ A comprehensive CubeSat flatsat testbed for deploying and testing AI algorithms,
 **Key Features:**
 - 🏗️ **Hybrid Architecture** combining proven satellite protocols with modern AI frameworks
 - 🛰️ **cFS-Inspired C&DH** for flight-proven satellite bus operations
-- 🤖 **SpaceROS AI Payload** with containerized processing (NVIDIA Jetson + FPGA)
+- 🤖 **AI Payload** with descision-making capability (GPU/FPGA/NPU)
 - 🔗 **Dual-Layer Communication** (CSP/CAN for control + GigE for high-bandwidth)
 - 🎓 **Educational platform** for student research projects
 - 🌍 **Fully open-source** (GPL-3.0)
@@ -51,7 +51,7 @@ We actively support Master's thesis projects related to space systems:
 
 Current research areas:
 - **Command & Data Handling Software** (cFS-inspired architecture with CSP/CAN)
-- **AI Payload Processing Framework** (SpaceROS with native ROS2 nodes, Zenoh RMW and optional containerization)
+- **AI Payload Processing Framework** (AI Apps, Zenoh pub/sub and optional containerization)
 - **Communication Infrastructure** (Hybrid CSP/CAN + Zenoh over GigE architecture)
 
 ---
@@ -97,16 +97,16 @@ We welcome collaboration from:
 - CubeSat subsystem integration
 - cFS-inspired avionics software architecture
 - Power management systems (EPS)
-- CubeSat Space Protocol (CSP) implementation
+- CubeSat Space Protocol (CSP)
 - Real-time communication systems
 
 ### Modern Middleware & Protocols
-- SpaceROS (ROS2) for AI payload processing
+- Novel AI payload processing
 - CubeSat Space Protocol (libcsp)
-- Zenoh as ROS2 Middleware
+- Zenoh for pub/sub message middleware
 - Zenoh for high-bandwidth data transfer
 - Real-time operating systems (FreeRTOS)
-- Containerization for space applications
+- Optional containerization for space applications
 
 ---
 
@@ -119,16 +119,8 @@ We welcome collaboration from:
 - [CubeSat Space Protocol (CSP)](https://github.com/libcsp/libcsp) - Communication protocol
 - [FreeRTOS](https://www.freertos.org/) - Real-time operating system
 
-**AI Payload:**
-- [Space ROS](https://space.ros.org/) - ROS 2 for space applications
-- [TensorRT](https://developer.nvidia.com/tensorrt) - NVIDIA inference optimizer
-- [Docker](https://www.docker.com/) - Container platform (optional)
-
 **Communication:**
 - [Zenoh](https://zenoh.io/) - Zenoh Network Protocol
-
-### Research Inspiration
-- **JAXA RACS**: H. Kato et al., "ROS and cFS System (RACS): Easing Space Robotic Development," IEEE Aerospace 2021
 
 ### Publications
 *Publications and papers from our research will be listed here*
@@ -155,21 +147,16 @@ We welcome collaboration from:
 ORION Lab  
 National Technical University of Athens
 
-- Simon Vellas: svellas@mail.ntua.gr
-- Christos Chronis: chronis@hua.gr
-- Alexis Apostolakis: alexis.apostolakis@gmail.com
-- Giorgos Athanasiou: georgios.athanasiou.ntua@gmail.com
-
 **Website:** [https://orionlab.space.noa.gr/](https://orionlab.space.noa.gr/)  
 **Location:** Athens, Greece
 
-For inquiries about collaboration, student projects, or research opportunities, please visit our website or reach out through GitHub.
+For inquiries about collaboration, student projects or research opportunities, please reach out through the provided e-mails(s) in each project repository
 
 ---
 
 ## 📜 License
 
-All our projects are open-source under **GPL-3.0** license, promoting transparency, collaboration and knowledge sharing in the space community.
+**GPL-3.0**
 
 ---
 
